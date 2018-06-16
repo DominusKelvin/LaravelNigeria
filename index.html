@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Laravel Warri  | Welcome to Laravel Nigeria</title>
+        <link rel="stylesheet" href="css/bulma.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!-- Navbar Starts here -->
+        <nav class="navbar is-dark has-shadow">
+            <!--navbar-brand starts here -->
+            <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">LaravelWarri</a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            </a>
+            </div>
+            <!-- navbar-brand ends here -->
+
+            <!-- navbar-menu starts here -->
+            <div class="navbar-menu" id="navMenu">
+                <div class="navbar-end">
+                <a href="comments.html" class="navbar-item">comments</a>
+                </div>
+            </div>
+            <!-- navbar menu ends here -->
+        </nav>
+        <!-- Navbar ends here -->
+        
+        <!-- main section -->
+        <section class="hero is-light">
+                <div class="hero-body">
+                    <div class="container has-text-centered">
+                        <h1 class="title">Welcome to Laravel Warri</h1>
+                        <h2 class="subtitle">tell us what you think about this meet-up</h2>
+                    </div>
+                </div>
+        </section>
+        <section class="section">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column is-half is-offset-one-quarter">   
+                            <form class="form" method="POST" action="/comments">
+                                <!-- Displays error if they are any errors -->    
+                                <div class="field">
+                                    <label class="label">Name</label>
+                                    <div class="control">
+                                        <input class="input" type="text" placeholder="full name" name="name">
+                                    </div>
+                                    
+                                    <p class="help is-danger"></p>
+                                </div>
+                                <div class="field">
+                                    <label class="label">Email</label>
+                                    <div class="control">
+                                        <input class="input" type="text" placeholder="email@example.com" name="email">
+                                    </div>
+                                    <p class="help is-danger"></p>
+                                </div> 
+                                <div class="field">
+                                    <label class="label">Comment</label>
+                                    <div class="control">
+                                        <textarea class="textarea" placeholder="What do you think of LaravelWarri" name="body"></textarea>
+                                    </div>
+                                    <p class="help is-danger"></p>
+                                </div> 
+                                <div class="field is-grouped">
+                                    <div class="control">
+                                        <button class="button is-dark is-outlined">Comment</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- end section -->
+
+        <!-- footer section starts here -->
+        <footer class="footer">
+            <div class="container">
+                <div class="content has-text-centered">
+                    <p>
+                        <strong>Crafted by Laravel Nigeria Warri</strong>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- footer section ends here -->
+
+        <!-- script to toggle hamburger -->
+        <script>
+        </script>
+    </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Laravel Warri  | Edit Comment</title>
+        <link rel="stylesheet" href="css/bulma.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!--navbar-brand starts here -->
+        <nav class="navbar is-dark has-shadow">
+            <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">LaravelWarri</a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            </a>
+            </div>
+            <!-- navbar-brand ends here -->
+            <!-- navbar-menu starts here -->
+            <div class="navbar-menu" id="navMenu">
+                <div class="navbar-end">
+                <a href="comments.html" class="navbar-item">comments</a>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar menu ends here -->
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-half is-offset-one-quarter">
+                        <form class="form" method="POST" action="/comments/update">
+                            <!-- Displays error if they are any errors -->    
+                            <div class="field">
+                                <label class="label">Name</label>
+                                <div class="control">
+                                <input class="input" type="text" placeholder="full name" name="name" value="Kelvin Omereshone">
+                                </div>
+                                <p class="help is-danger"></p>
+                            </div>
+                            <div class="field">
+                                <label class="label">Email</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="email@example.com" name="email" value="kelvinomereshone@gmail.com">
+                                </div>
+                                <p class="help is-danger"></p>
+                            </div> 
+                            <div class="field">
+                                <label class="label">Comment</label>
+                                <div class="control">
+                                    <textarea class="textarea" placeholder="What do you think of LaravelWarri" name="body">I love laravel Warri</textarea>
+                                </div>
+                                    <p class="help is-danger"></p>
+                            </div> 
+                            <div class="field is-grouped">
+                                <div class="control">
+                                    <button class="button is-dark is-outlined">Comment</button>
+                                </div>
+                            </div>
+                        <input type="hidden" name="id" value="1" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- footer section starts here -->
+        <footer class="footer">
+            <div class="container">
+                <div class="content has-text-centered">
+                    <p>
+                        <strong>Crafted by Laravel Nigeria Warri</strong>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- footer section ends here -->
+        
+        <!-- script to toggle hamburger -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+
+            // Get all "navbar-burger" elements
+            var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+            // Add a click event on each of them
+            $navbarBurgers.forEach(function ($el) {
+                $el.addEventListener('click', function () {
+
+                // Get the target from the "data-target" attribute
+                var target = $el.dataset.target;
+                var $target = document.getElementById(target);
+
+                // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+                $el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+                });
+            });
+            }
+
+            });
+        </script>
+    </body>
+</html>

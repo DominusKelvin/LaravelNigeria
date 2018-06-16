@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Laravel Warri  | Welcome to Laravel Nigeria</title>
+        <link rel="stylesheet" href="css/bulma.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <nav class="navbar is-dark has-shadow">
+            <!--navbar-brand starts here -->
+            <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">LaravelWarri</a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            </a>
+            </div>
+            <!-- navbar-brand ends here -->
+            <!-- navbar-menu starts here -->
+            <div class="navbar-menu" id="navMenu">
+                <div class="navbar-end">
+                <a href="comments.html" class="navbar-item">comments</a>
+                </div>
+            </div>
+            <!-- navbar menu ends here -->
+        </nav>
+
+        <div class="container pd">
+                <div class="columns">
+                    <div class="column is-one-third">
+                        <div class="card">
+                                <header class="card-header">
+                                <p class="card-header-title">
+                                Kelvin Omereshone
+                                </p>
+                                </header>
+                                <div class="card-content">
+                                <div class="content">
+                                    <p><span class="is-size-4">I love laravel Nigeria</span>
+                                    <br>
+                                    <time class="has-text-grey">1 hour ago</time>
+                                </p>
+                                </div>
+                                </div>
+                                <footer class="card-footer">
+                                <a href="edit.html" class="card-footer-item has-text-grey">Edit</a>
+                                <a href="#" class="card-footer-item has-text-grey">Delete</a>
+                                </footer>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        
+        <!-- footer section starts here -->
+        <footer class="footer">
+            <div class="container">
+                <div class="content has-text-centered">
+                    <p>
+                        <strong>Crafted by Laravel Nigeria Warri</strong>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- footer section ends here -->
+
+        <!-- script to toggle hamburger -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+
+            // Get all "navbar-burger" elements
+            var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+            // Add a click event on each of them
+            $navbarBurgers.forEach(function ($el) {
+                $el.addEventListener('click', function () {
+
+                // Get the target from the "data-target" attribute
+                var target = $el.dataset.target;
+                var $target = document.getElementById(target);
+
+                // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+                $el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+                });
+            });
+            }
+
+            });
+        </script>
+    </body>
+</html>
